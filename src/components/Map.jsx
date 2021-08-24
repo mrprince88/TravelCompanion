@@ -1,7 +1,7 @@
 import 'mapbox-gl/dist/mapbox-gl.css'
 import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css'
 import React, { useState, useRef, useCallback,useEffect } from 'react'
-import ReactMapGL,{GeolocateControl,NavigationControl,Marker,WebMercatorViewport}  from 'react-map-gl'
+import ReactMapGL,{GeolocateControl,NavigationControl,Marker}  from 'react-map-gl'
 import { Paper, Typography,useMediaQuery} from '@material-ui/core'
 import Geocoder from 'react-map-gl-geocoder'
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined'
@@ -33,7 +33,7 @@ const styles = makeStyles({
   },
 });
 
-const MAPBOX_TOKEN = 'pk.eyJ1IjoibXJwcmluY2U4OCIsImEiOiJja3Nqd20yMjQyaHE2MnZxazVqenQ0N25rIn0.cqrq-n1gtDamQjcJksfoWA'
+const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN
 
   
 export default function Map({geoCoder,setBounds,places,setPlaceClicked,theme,search,weatherData,setCoords}) {
@@ -109,7 +109,7 @@ export default function Map({geoCoder,setBounds,places,setPlaceClicked,theme,sea
         latitude={Number(data.coord.lat)}
         longitude={Number(data.coord.lon)}
         >
-        <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} height="70px" />
+        <img alt="weather" src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} height="70px" />
         </Marker> )
         }
       }

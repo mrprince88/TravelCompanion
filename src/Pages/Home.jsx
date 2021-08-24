@@ -5,7 +5,6 @@ import Header from '../components/Header';
 import List from '../components/List';
 import Map from '../components/Map';
 import {getPlacesData,getWeatherData} from '../api';
-import { LabelImportantRounded } from '@material-ui/icons';
 import { ThemeProvider } from '@material-ui/styles';
 import { createTheme } from "@material-ui/core/styles";
 
@@ -69,7 +68,7 @@ export default function Home() {
                         setSearch={setSearch}
                     />
                 </Grid>
-                <Grid item xs={12} md={8} style={{paddingLeft:'0',paddingRight:'0',paddingBottom:'0',height: 'calc(100vh - 60px)'}}>
+                <Grid item xs={12} md={8} style={{paddingTop:'5px',height: 'calc(100vh - 60px)'}}>
                     <Map
                         geoCoder={geocoderContainerRef}
                         setBounds={setBounds}

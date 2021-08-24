@@ -1,8 +1,7 @@
 import React,{useState,useEffect,createRef} from 'react'
-import { CircularProgress,Grid,Typography,InputLabel,MenuItem,FormControl,Select,Button} from '@material-ui/core'
+import { CircularProgress,Grid,Typography,InputLabel,MenuItem,FormControl,Select,IconButton} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import PlaceDetails from './PlaceDetails';
-import { CallReceivedTwoTone } from '@material-ui/icons';
 import SearchIcon from '@material-ui/icons/Search';
 
 const styles=makeStyles((theme) => ({
@@ -41,7 +40,7 @@ const styles=makeStyles((theme) => ({
   }
 }));
 
-export default function List({places,placeClicked,isLoading,setType,type,rating,setRating,setSearch,search}) {
+export default function List({places,placeClicked,isLoading,setType,type,rating,setRating,setSearch}) {
     const classes=styles();
     const [elRefs, setElRefs] = useState([]);
 
@@ -72,13 +71,19 @@ export default function List({places,placeClicked,isLoading,setType,type,rating,
                 </Select>
             </FormControl>
             </div>
-            <Button className={classes.search} onClick={()=>setSearch(true)}>
-              <SearchIcon />
-            </Button>
+            <IconButton
+              edge="end"
+              color="inherit"
+              aria-label="mode"
+              className={classes.search}
+              onClick={()=>setSearch(true)}
+            >
+              <SearchIcon/>
+            </IconButton>
             </div>
             {isLoading ? (
               <div className={classes.loading}>
-                <CircularProgress size="5rem" />
+                <CircularProgress size="5rem" color="secondary" />
               </div>
               ) : (
             <Grid container spacing={3} className={classes.list}>
