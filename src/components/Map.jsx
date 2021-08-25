@@ -7,10 +7,10 @@ import Rating from '@material-ui/lab/Rating'
 import { makeStyles } from '@material-ui/core/styles';
 import 'mapbox-gl/dist/mapbox-gl.css'
 import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css'
-import mapboxgl from 'mapbox-gl';
+import mapboxgl from "mapbox-gl";
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 const styles = makeStyles({
   paper: {
