@@ -34,7 +34,7 @@ const styles = makeStyles((theme) => ({
 
 export default function Header({geoCoder,setTheme,theme}) {
     const classes=styles();
-    const icon = theme ? <Brightness7Icon /> : <Brightness3Icon />;
+    const icon = theme ? <Brightness3Icon />:<Brightness7Icon />;
 
     return (
         <AppBar position='static'>
