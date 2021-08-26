@@ -26,12 +26,6 @@ export default function Home() {
     const [coords, setCoords] = useState({});
     const [search,setSearch] = useState(false);
 
-    useEffect(() => {
-        const filtered = places?.filter((place) => Number(place.rating) > rating);
-    
-        setFilteredPlaces(filtered);
-      }, [rating]);
-
     useEffect(()=>{
         setIsLoading(true)
 
@@ -43,12 +37,19 @@ export default function Home() {
         getPlacesData({sw:bounds._sw,ne:bounds._ne,type:type})
             .then((data)=>{
                 setPlaces(data?.filter((place) => place.name && place.num_reviews > 0));
-                setRating('0');
+                const filtered = places?.filter((place) => Number(place.rating) > rating);
+                setFilteredPlaces(filtered);
                 setIsLoading(false);
                 setSearch(false)
             })
         },[search])
 
+        useEffect(() => {
+          const filtered = places?.filter((place) => Number(place.rating) > rating);
+      
+          setFilteredPlaces(filtered);
+        }, [rating]);
+        
     const geocoderContainerRef = useRef();
 
     return (

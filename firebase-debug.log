@@ -1,0 +1,38 @@
+[debug] [2021-08-26T03:36:02.838Z] ----------------------------------------------------------------------
+[debug] [2021-08-26T03:36:02.842Z] Command:       /usr/local/bin/firebase /home/mrprince/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2021-08-26T03:36:02.842Z] CLI Version:   9.16.5
+[debug] [2021-08-26T03:36:02.842Z] Platform:      linux
+[debug] [2021-08-26T03:36:02.842Z] Node Version:  v12.18.1
+[debug] [2021-08-26T03:36:02.845Z] Time:          Thu Aug 26 2021 09:06:02 GMT+0530 (India Standard Time)
+[debug] [2021-08-26T03:36:02.845Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-26T03:36:02.931Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-26T03:36:02.931Z] > authorizing via signed-in user (mrprince0088@gmail.com)
+[debug] [2021-08-26T03:36:02.932Z] [iam] checking project travel-companion-323608 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-26T03:36:02.935Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-26T03:36:02.936Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-26T03:36:03.366Z] <<< HTTP RESPONSE 200 {"date":"Thu, 26 Aug 2021 03:36:03 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T03:36:03.379Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/travel-companion-323608:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-26T03:36:05.300Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 03:36:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1366","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T03:36:05.306Z] > refreshing access token with scopes: []
+[debug] [2021-08-26T03:36:05.307Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-26T03:36:05.597Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 26 Aug 2021 03:36:05 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T03:36:05.612Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/travel-companion-323608 [none]
+[debug] [2021-08-26T03:36:06.546Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/travel-companion-323608 200
+[debug] [2021-08-26T03:36:06.546Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/travel-companion-323608 {"projectId":"travel-companion-323608","projectNumber":"424486498620","displayName":"travel-companion","name":"projects/travel-companion-323608","resources":{"hostingSite":"travel-companion-323608"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'travel-companion-323608'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-08-26T03:36:06.558Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-26T03:36:06.558Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-26T03:36:06.867Z] <<< HTTP RESPONSE 200 {"date":"Thu, 26 Aug 2021 03:36:06 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T03:36:06.874Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/travel-companion-323608/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-08-26T03:36:09.402Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 03:36:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[travel-companion-323608]: beginning deploy... 
+[info] i  hosting[travel-companion-323608]: found 15 files in build 
