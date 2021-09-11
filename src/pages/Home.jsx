@@ -28,12 +28,11 @@ export default function Home() {
   useEffect(async() => {
     if(search) {
     setIsLoading(true);
-    setPlaces([]);
-    setFilteredPlaces([]);
 
     const map=mapRef.current.getMap();
     const {_sw,_ne}=map.getBounds();
     const {lat,lng}=map.getCenter();
+    
     getWeatherData(lng,lat)
     .then(data => {
       setWeatherData(data?.list);
