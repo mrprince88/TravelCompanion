@@ -20,4 +20,4 @@
 - OpenWeather API
 
 ## Demo
-<img src="img/../gif/demo.gif" width="70%">
+<img src="img/../gif/demo.gif" width="100%">
