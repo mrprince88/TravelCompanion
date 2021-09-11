@@ -17,7 +17,6 @@ export const getPlacesData = async(sw,ne,type)=>{
             'x-rapidapi-key': process.env.REACT_APP_RAPID_API_KEY,
           }
       });
-      console.log(data+" "+sw.lat+" "+sw.lng)
        return data;
     }
   }

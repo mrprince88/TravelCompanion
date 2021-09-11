@@ -11,7 +11,7 @@ const styles = makeStyles((theme) => ({
     display:'none',
     [theme.breakpoints.up('sm')]: {
       display:'block',
-      marginRight:'20px'
+      marginRight:'20px',
     },
   },
   search: {
@@ -22,13 +22,17 @@ const styles = makeStyles((theme) => ({
     flexDirection:'row',
     alignItems:'center',
     justifyContent:'space-between',
+
   },
   box: {
     display:'flex',
     alignItems:'center',
   },
   button:{
-    marginRight:'10px'
+    marginRight:'10px',
+    [theme.breakpoints.down('sm')]: {
+      display:'none'
+    }
   }
 }));
 
@@ -37,7 +41,7 @@ export default function Header({geoCoder,setTheme,theme}) {
     const icon = theme ? <Brightness3Icon />:<Brightness7Icon />;
 
     return (
-        <AppBar position='static'>
+        <AppBar position='sticky'>
             <Toolbar className={classes.toolbar}>
             <Box display='flex' className={classes.box}>
               <div className={classes.heading}>

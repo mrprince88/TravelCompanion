@@ -76,7 +76,7 @@ export default function Map({mapRef,geoCoder,places,setPlaceClicked,theme,weathe
         className={classes.markerContainer}
         onClick={()=>setPlaceClicked(i)}
         > {!matches
-          ? <LocationOnOutlinedIcon color="primary" fontSize="large" /> 
+          ? <LocationOnOutlinedIcon color="secondary" fontSize="large" /> 
           : (
             <Paper elevation={3} className={classes.paper}>
               <Typography className={classes.typography} variant="subtitle2" gutterBottom> {place.name}</Typography>

@@ -10,8 +10,8 @@ import { createTheme } from "@material-ui/core/styles";
 
 
 export default function Home() {
-  const [places, setPlaces] = useState([]);
 
+  const [places, setPlaces] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [type, setType] = useState('restaurants');
   const [rating, setRating] = useState("0");
@@ -21,7 +21,9 @@ export default function Home() {
   const [theme, setTheme] = useState(false);
   const appliedTheme = createTheme(theme ? light : dark);
   const [search, setSearch] = useState(false);
+
   const mapRef=useRef();
+  const geocoderContainerRef = useRef();
 
   useEffect(async() => {
     if(search) {
@@ -39,8 +41,8 @@ export default function Home() {
 
     getPlacesData(_sw,_ne,type)
         .then(data=>{
-            setPlaces(data.filter((place) => place.name && place.num_reviews > 0));
-            const filtered = data.filter((place) => place.rating && Number(place.rating) > rating);
+            setPlaces(data?.filter((place) => place.name && place.num_reviews > 0));
+            const filtered = data?.filter((place) => place.rating && Number(place.rating) > rating);
             setFilteredPlaces(filtered);
             setIsLoading(false);
             setSearch(false);
@@ -52,8 +54,6 @@ export default function Home() {
     const filtered = places?.filter((place) => Number(place.rating) > rating);
     setFilteredPlaces(filtered);
   }, [rating]);
-
-  const geocoderContainerRef = useRef();
 
   return (
     <ThemeProvider theme={appliedTheme}>
