@@ -9,7 +9,6 @@
 - 📌 Autocomplete search bar to find new places
 - 📌 Toggle between dark and light mode
 - 📌 Clean, material design
-- 
 
 ## Tech Used
 - ReactJS
