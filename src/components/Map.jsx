@@ -36,19 +36,18 @@ const styles = makeStyles({
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
 
   
-export default function Map({geoCoder,setBounds,places,setPlaceClicked,theme,search,weatherData,setCoords}) {
+export default function Map({mapRef,geoCoder,places,setPlaceClicked,theme,weatherData}) {
+
+  const classes = styles();
+  const matches = useMediaQuery('(min-width:600px)');
 
   const [viewport, setViewport] = useState({
     latitude: 0,
     longitude: 0,
     width:100,
     height:100,
-    zoom: 14,
+    zoom: 14
   });
-
-  const mapRef = useRef();
-  const classes = styles();
-  const matches = useMediaQuery('(min-width:600px)');
 
   const handleViewportChange = useCallback(
     (newViewport) =>  {
@@ -56,13 +55,6 @@ export default function Map({geoCoder,setBounds,places,setPlaceClicked,theme,sea
     },
     []
   );
-  
-  useEffect(()=>{
-    if(search) {
-      setCoords({lat:viewport.latitude,lng:viewport.longitude})
-      setBounds(mapRef.current.getMap().getBounds());
-    }
-  },[search])
 
   const handleGeocoderViewportChange = useCallback(
     (newViewport) => {
@@ -113,8 +105,8 @@ export default function Map({geoCoder,setBounds,places,setPlaceClicked,theme,sea
 
   return (
       <ReactMapGL
-        mapStyle={!theme ? process.env.REACT_APP_MAPBOX_DARK:process.env.REACT_APP_MAPBOX_LIGHT }
         ref={mapRef}
+        mapStyle={!theme ? process.env.REACT_APP_MAPBOX_DARK:process.env.REACT_APP_MAPBOX_LIGHT }
         {...viewport}
         width="100%"
         height="100%"

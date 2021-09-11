@@ -6,9 +6,6 @@
 ## Features
 - 📌 Powerful Search Engine for hotels,restaurants and attractions all around the world
 - 📌 Automatically detect users location on page load
-- 📌 Autocomplete search bar to find new places
-- 📌 Toggle between dark and light mode
-- 📌 Clean, material design
 
 ## Tech Used
 - ReactJS
@@ -20,4 +17,4 @@
 - OpenWeather API
 
 ## Demo
-<img src="img/../gif/demo.gif" width="100%">
+<img src="gif/demo.gif" width="100%">

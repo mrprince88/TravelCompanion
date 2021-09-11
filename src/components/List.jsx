@@ -1,5 +1,5 @@
 import React,{useState,useEffect,createRef} from 'react'
-import { CircularProgress,Grid,Typography,InputLabel,MenuItem,FormControl,Select,IconButton} from '@material-ui/core'
+import { CircularProgress,Grid,Typography,InputLabel,MenuItem,FormControl,Select,IconButton,Container} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import PlaceDetails from './PlaceDetails';
 import SearchIcon from '@material-ui/icons/Search';
@@ -87,15 +87,14 @@ export default function List({places,placeClicked,isLoading,setType,type,rating,
               </div>
               ) : (
             <Grid container spacing={3} className={classes.list}>
-                {places?.map((place,i)=>(
+                {places && places.map((place,i)=>(
                     <Grid ref={elRefs[i]} item key={i} xs={12}>
                         <PlaceDetails
                         place={place}
                         selected={Number(placeClicked)===i}
                         refProp={elRefs[i]}
                         />
-                    </Grid>
-                ))}
+                    </Grid> ))}
             </Grid>)}
         </div>
     )
