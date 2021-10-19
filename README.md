@@ -20,4 +20,5 @@
 - OpenWeather API
 
 ## Demo
+For demo, press <a href="https://travel-companion-323608.firebaseapp.com/">here.</a>
 <img src="img/../gif/demo.gif" width="100%">
