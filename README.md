@@ -21,7 +21,7 @@
 
 ## Demo
 
-For demo, press <a href="https://travel-companion-323608.firebaseapp.com/" target="_blank">here.</a>
+For demo, press <a href="https://travel-companion-323608.firebaseapp.com/" target="_blank">here</a>.
 
 
 <img src="img/../gif/demo.gif" width="100%">
