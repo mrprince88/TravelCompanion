@@ -1,5 +1,5 @@
 # Travel Companion
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/mrprince88/TravelCompanion/blob/main/LICENSE)
 
 #### Powerful Search Engine for hotels,restaurants and attractions all around the world
 
