@@ -1,4 +1,16 @@
 # Travel Companion
+
+## Demo
+
+For demo, press <a href="https://travel-companion-323608.firebaseapp.com/" target="_blank">here</a>.
+<br />
+<br />
+
+<img src="img/../gif/demo.gif" width="100%">
+
+<br />
+<br />
+
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/mrprince88/TravelCompanion/blob/main/LICENSE)
 
 #### Powerful Search Engine for hotels,restaurants and attractions all around the world
@@ -18,10 +30,3 @@
 - Geocoding API
 - Travel Advisor API
 - OpenWeather API
-
-## Demo
-
-For demo, press <a href="https://travel-companion-323608.firebaseapp.com/" target="_blank">here</a>.
-
-
-<img src="img/../gif/demo.gif" width="100%">
