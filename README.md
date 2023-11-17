@@ -8,7 +8,6 @@ For demo, press <a href="https://travel-companion-323608.firebaseapp.com/" targe
 
 ![demo](https://github.com/mrprince88/TravelCompanion/assets/123789913/c6feb586-3e85-403d-a65a-24738b610fd0)
 
-
 <br />
 <br />
 
@@ -17,6 +16,7 @@ For demo, press <a href="https://travel-companion-323608.firebaseapp.com/" targe
 #### Powerful Search Engine for hotels,restaurants and attractions all around the world
 
 ## Features
+
 - 📌 Powerful Search Engine for hotels,restaurants and attractions all around the world
 - 📌 Automatically detects your location on load
 - 📌 Autocomplete search bar to find new places
@@ -24,6 +24,7 @@ For demo, press <a href="https://travel-companion-323608.firebaseapp.com/" targe
 - 📌 Clean, material design
 
 ## Tech Used
+
 - ReactJS
 - Material UI
 - react-map-gl
