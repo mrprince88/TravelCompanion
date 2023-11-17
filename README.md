@@ -12,7 +12,7 @@ For demo, press <a href="https://travel-companion-323608.firebaseapp.com/" targe
 <br />
 <br />
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/mrprince88/TravelCompanion/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/mrprince88/TravelCompanion/main/LICENSE)
 
 #### Powerful Search Engine for hotels,restaurants and attractions all around the world
 
