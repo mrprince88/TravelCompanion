@@ -6,7 +6,8 @@ For demo, press <a href="https://travel-companion-323608.firebaseapp.com/" targe
 <br />
 <br />
 
-<img src="img/../gif/demo.gif" width="100%">
+![demo](https://github.com/mrprince88/TravelCompanion/assets/123789913/c6feb586-3e85-403d-a65a-24738b610fd0)
+
 
 <br />
 <br />
